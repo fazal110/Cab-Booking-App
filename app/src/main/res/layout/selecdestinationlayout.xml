@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    android:weightSum="10" >
+    
+    <!--  upper bar  conatiner-->
+    <LinearLayout 
+       android:layout_height="0dp"
+       android:layout_width="fill_parent" 
+        android:layout_weight="3"
+        android:background="#FFF"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <!--  arrow imageview-->
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:src="@drawable/destination_bullet"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            />
+            
+        
+        <!-- layout for textviews -->
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7.5"
+            android:weightSum="2"
+            android:orientation="vertical"
+            
+            >
+            <TextView 
+                android:id="@+id/source_textview_SD"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/my_location"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dip"
+                android:textSize="18sp"
+                android:paddingBottom="2dp"
+                />
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                
+                
+                
+                >
+             <AutoCompleteTextView
+                 android:id="@+id/autocompletetextview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|start"
+                android:hint="Choose Your Destination"
+                android:textColor="#000"
+                android:singleLine="true"
+                
+                
+                
+                
+                />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+        <!-- layout for distance -->
+ 
+    
+    <fragment 
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        
+        android:id="@+id/mapfragment_SD"
+         
+        
+        >
+         <RelativeLayout
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="5dip"
+        
+       
+        >
+         <ImageButton 
+             
+            android:id="@+id/book_now_Imagebutton_SD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@android:color/transparent"
+            android:src="@drawable/book_nowsd"
+            android:scaleType="centerInside"
+            />
+         </RelativeLayout>
+    </fragment>
+
+</LinearLayout>
+
+    
+    </RelativeLayout>

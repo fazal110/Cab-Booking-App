@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_titlebar_color">#b20000</color>
+    <color name="action_titlebar_color1">#f4e81b</color>
+    <color name="cab_default">#ADD8E6</color>
+    <color name="cab_selected">#00BFFF</color>
+    <color name="update_profile_first">#b20000</color>
+    <color name="blue">#b20000</color>
+
+    <color name="grey">#EDEEEF</color>
+    <color name="dark_green">#388E3C</color>
+
+    <color name="dark_grey">#AEAEAE</color>
+
+    <color name="accent">#DF4A32</color>
+
+    <color name="primary">#4A148C</color>
+    <color name="primary_dark">#5AB831</color>
+    <color name="primary_light">#DCEDC8</color>
+
+    <color name="light_black">#747474</color>
+    <color name="black">#616161</color>
+    <color name="google">#C6412C</color>
+
+
+    <color name="blue_grey_500">#607D8B</color>
+    <color name="blue_grey_600">#546E7A</color>
+    <color name="blue_grey_700">#455A64</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="blue_grey_900">#263238</color>
+</resources>

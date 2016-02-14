@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="224dp"
+        android:layout_height="215dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/dad" />
+
+    <TextView
+        android:text="Enter Your name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/nn"
+        android:padding="10dp"
+        android:textColor="#000" />
+    <TextView
+        android:text="Rate me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="15dp"
+
+        android:textColor="#000" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="2.0"
+        android:progressTint="#b20000"
+        android:secondaryProgressTint="#b20000" />
+    <TextView
+        android:text="Give Review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+
+        android:textColor="#000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/review" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="10dp"
+        android:background="#b20000"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:onClick="onClickreview" />
+
+
+</LinearLayout>
+
+
